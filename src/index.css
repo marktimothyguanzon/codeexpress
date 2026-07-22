@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+/* ===========================
+   CodeExpress Design Tokens
+   =========================== */
+
+:root {
+  --color-primary: #2563eb;
+  --color-secondary: #22c55e;
+  --color-dark: #0f172a;
+  --color-light: #f8fafc;
+  --color-white: #ffffff;
+
+  --font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--color-light);
+  color: var(--color-dark);
+  font-family: var(--font-family);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
