@@ -3,6 +3,7 @@ import TrustedCompanies from "../components/features/home/trusted/TrustedCompani
 import OurServices from "../components/features/home/OurServices";
 import WhyChooseUs from "../components/features/home/WhyChooseUs/WhyChooseUs";
 import FeaturedSolutions from "../components/features/home/FeaturedSolutions/FeaturedSolutions";
+import TechnologyStack from "../components/features/home/TechnologyStack/TechnologyStack";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <OurServices />
        <WhyChooseUs />
        <FeaturedSolutions />
+       <TechnologyStack />
     </>
   );
 }
