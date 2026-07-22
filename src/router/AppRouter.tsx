@@ -10,43 +10,24 @@ import Blog from "../pages/Blog";
 import Contact from "../pages/Contact";
 import Portfolio from "../pages/Portfolio";
 
-export const router = createBrowserRouter([
+export const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <MainLayout />,
+      children: [
+        { index: true, element: <Home /> },
+        { path: "about", element: <About /> },
+        { path: "services", element: <Services /> },
+        { path: "portfolio", element: <Portfolio /> },
+        { path: "solutions", element: <Solutions /> },
+        { path: "careers", element: <Careers /> },
+        { path: "blog", element: <Blog /> },
+        { path: "contact", element: <Contact /> },
+      ],
+    },
+  ],
   {
-    path: "/",
-    element: <MainLayout />,
-    children: [
-      {
-        index: true,
-        element: <Home />,
-      },
-      {
-        path: "about",
-        element: <About />,
-      },
-      {
-        path: "services",
-        element: <Services />,
-      },
-      {
-      path: "portfolio",
-      element: <Portfolio />,
-      },
-      {
-        path: "solutions",
-        element: <Solutions />,
-      },
-      {
-        path: "careers",
-        element: <Careers />,
-      },
-      {
-        path: "blog",
-        element: <Blog />,
-      },
-      {
-        path: "contact",
-        element: <Contact />,
-      },
-    ],
-  },
-]);
+    basename: "/codeexpress",
+  }
+);
