@@ -1,13 +1,14 @@
 import { motion } from "framer-motion";
+import type { ReactNode } from "react";
 
 type FloatingIconProps = {
-  icon: React.ReactNode;
+  icon: ReactNode;
   top: string;
   left: string;
   delay?: number;
 };
 
-function FloatingIcon({
+export default function FloatingIcon({
   icon,
   top,
   left,
@@ -15,23 +16,44 @@ function FloatingIcon({
 }: FloatingIconProps) {
   return (
     <motion.div
-      className="absolute z-20 flex h-16 w-16 items-center justify-center rounded-full bg-white/10 backdrop-blur-md shadow-xl border border-white/20"
+      className="
+        absolute
+        z-20
+        flex
+        items-center
+        justify-center
+
+        h-10 w-10
+        sm:h-12 sm:w-12
+        lg:h-16 lg:w-16
+
+        rounded-full
+
+        border border-white/20
+
+        bg-white/10
+        backdrop-blur-xl
+
+        shadow-lg
+        lg:shadow-2xl
+      "
       style={{ top, left }}
       animate={{
-        y: [0, -12, 0],
+        y: [0, -10, 0],
       }}
       transition={{
-        repeat: Infinity,
         duration: 3,
+        repeat: Infinity,
+        repeatType: "loop",
+        ease: "easeInOut",
         delay,
       }}
       whileHover={{
         scale: 1.15,
+        rotate: 5,
       }}
     >
       {icon}
     </motion.div>
   );
 }
-
-export default FloatingIcon;
