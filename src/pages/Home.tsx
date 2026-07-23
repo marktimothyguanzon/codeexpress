@@ -5,6 +5,7 @@ import WhyChooseUs from "../components/features/home/WhyChooseUs/WhyChooseUs";
 import FeaturedSolutions from "../components/features/home/FeaturedSolutions/FeaturedSolutions";
 import TechnologyStack from "../components/features/home/TechnologyStack/TechnologyStack";
 import ProductShowcase from "../components/features/home/ProductShowcase/ProductShowcase";
+import DevelopmentProcess from "../components/features/home/process/DevelopmentProcess";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
        <FeaturedSolutions />
        <TechnologyStack />
        <ProductShowcase />
+       <DevelopmentProcess />
     </>
   );
 }
