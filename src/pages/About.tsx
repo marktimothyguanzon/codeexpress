@@ -2,8 +2,7 @@ import AboutHero from "../components/features/about/hero/AboutHero";
 import CompanyStory from "../components/features/about/story/CompanyStory";
 import MissionCard from "../components/features/about/mission/MissionCard";
 import VisionCard from "../components/features/about/mission/VisionCard";
-
-
+import Principles from "../components/features/about/mission/Principles";
 
 export default function About() {
   return (
@@ -19,8 +18,7 @@ export default function About() {
 
     <VisionCard />
   
-
-      {/* Why Choose CodeExpress */}
+    <Principles /> 
   
     </>
   );
