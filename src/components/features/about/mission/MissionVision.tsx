@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import MissionCard from "./MissionCard";
+import VisionCard from "./VisionCard";
 
 export default function MissionVision() {
   return (
@@ -35,6 +37,14 @@ export default function MissionVision() {
         </p>
 
       </motion.div>
+      
+        <div className="mt-20 grid gap-10 lg:grid-cols-2">
+
+          <MissionCard />
+
+          <VisionCard />
+
+        </div>
 
     </section>
   );
