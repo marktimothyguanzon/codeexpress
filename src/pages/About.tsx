@@ -1,3 +1,9 @@
+import AboutHero from "../components/features/about/hero/AboutHero";
+
 export default function About() {
-  return <h1>About</h1>;
+  return (
+    <>
+      <AboutHero />
+    </>
+  );
 }
