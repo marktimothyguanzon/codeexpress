@@ -8,6 +8,7 @@ import ProductShowcase from "../components/features/home/ProductShowcase/Product
 import DevelopmentProcess from "../components/features/home/process/DevelopmentProcess";
 import Testimonials from "../components/features/home/testimonials/Testimonials";
 import FAQ from "../components/features/home/faq/FAQ";
+import ContactCTA from "../components/features/home/contactcta/ContactCTA";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
        <DevelopmentProcess />
        <Testimonials />
        <FAQ />
+       <ContactCTA />
     </>
   );
 }
