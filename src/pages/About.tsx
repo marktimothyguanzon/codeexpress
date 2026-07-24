@@ -1,6 +1,8 @@
 import AboutHero from "../components/features/about/hero/AboutHero";
 import CompanyStory from "../components/features/about/story/CompanyStory";
 import MissionCard from "../components/features/about/mission/MissionCard";
+import VisionCard from "../components/features/about/mission/VisionCard";
+
 
 
 export default function About() {
@@ -14,6 +16,9 @@ export default function About() {
 
       {/* Mission, Vision & Core Principles */}
       <MissionCard />
+
+    <VisionCard />
+  
 
       {/* Why Choose CodeExpress */}
   
