@@ -7,6 +7,7 @@ import TechnologyStack from "../components/features/home/TechnologyStack/Technol
 import ProductShowcase from "../components/features/home/ProductShowcase/ProductShowcase";
 import DevelopmentProcess from "../components/features/home/process/DevelopmentProcess";
 import Testimonials from "../components/features/home/testimonials/Testimonials";
+import FAQ from "../components/features/home/faq/FAQ";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
        <ProductShowcase />
        <DevelopmentProcess />
        <Testimonials />
+       <FAQ />
     </>
   );
 }
