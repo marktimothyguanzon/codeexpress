@@ -6,6 +6,7 @@ import FeaturedSolutions from "../components/features/home/FeaturedSolutions/Fea
 import TechnologyStack from "../components/features/home/TechnologyStack/TechnologyStack";
 import ProductShowcase from "../components/features/home/ProductShowcase/ProductShowcase";
 import DevelopmentProcess from "../components/features/home/process/DevelopmentProcess";
+import Testimonials from "../components/features/home/testimonials/Testimonials";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
        <TechnologyStack />
        <ProductShowcase />
        <DevelopmentProcess />
+       <Testimonials />
     </>
   );
 }
