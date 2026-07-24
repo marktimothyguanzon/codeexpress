@@ -4,6 +4,7 @@ import MissionCard from "../components/features/about/mission/MissionCard";
 import VisionCard from "../components/features/about/mission/VisionCard";
 import Principles from "../components/features/about/mission/Principles";
 import Team from "../components/features/about/team/Team";
+import CompanyTimeline from "../components/features/about/timeline/CompanyTimeline";
 
 export default function About() {
   return (
@@ -22,6 +23,8 @@ export default function About() {
     <Principles /> 
 
     <Team />
+
+    <CompanyTimeline />
   
     </>
   );
